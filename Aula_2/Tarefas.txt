@@ -1,0 +1,9 @@
+Média Movel
+
+Usar como entrada o impulso unitário e
+obtenha a correspondente saída.
+
+
+Implemente um programa em Matlab/Python
+que execute a equação do diagrama de blocos
+do eco.
