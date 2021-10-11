@@ -14,7 +14,7 @@ a = np.frombuffer(pcmdata,np.int16)
 x = np.arange(len(a))
 
 #Valor de k
-k = 32
+k = 32 
 
 #Plotar gráfico do áudio original
 plt.figure( figsize=(20,6))

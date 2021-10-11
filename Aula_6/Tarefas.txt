@@ -1,0 +1,1 @@
+Resolver os exercícios e gerar gráficos da segunda lista.
