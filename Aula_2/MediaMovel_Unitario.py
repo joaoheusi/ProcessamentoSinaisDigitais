@@ -16,14 +16,14 @@ def pulse_sign(sample, value,power):
 x = np.arange(0,25000,1)
 
 #De buffer para Array np.int16
-a  = pulse_sign(x,5000,15000)
+a  = pulse_sign(x,5000,1)
 
 #Valor de k
-k = 32
+k = 4
 
 #Plotar gráfico do áudio original
 plt.figure( figsize=(20,6))
-plt.plot(x, a)
+plt.stem(x, a)
 plt.show()
 
 #transformar array
@@ -39,13 +39,13 @@ for i in range(len(a)):
 
 #Plotar gráfico do áudio transformado
 plt.figure( figsize=(20,6))
-plt.plot(x, new_y)
+plt.stem(x, new_y)
 plt.show()
 
 
 #salvar em um novo arquivo o áudio transformado.
 entrada_file = open('unitario.pcm','wb')
-saida_file = open('unitario_filtro32.pcm', 'wb')
+saida_file = open('unitario_filtro16.pcm', 'wb')
 scaled_entrada = np.int16(a)
 scaled = np.int16(new_y)
 entrada_file.write(scaled_entrada.tobytes())

@@ -49,7 +49,7 @@ if __name__ == "__main__":
 
 
     x3 = np.arange(0,1,1/8000)
-    y3 = sinus_wave(x3,100)
+    y3 = sinus_wave(x3,400)
     plt.subplot(4,1,3)
     plt.plot(x3,y3)
 

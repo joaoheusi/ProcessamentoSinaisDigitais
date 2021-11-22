@@ -2,8 +2,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-x = np.ones(6)
-h = np.array([1, .5, .25, .125])
+x = np.zeros(6)
+x[3] = 1
+h = np.array([0.25, 0.25, 0.25, 0.25])
 
 y = np.convolve(x, h)
 

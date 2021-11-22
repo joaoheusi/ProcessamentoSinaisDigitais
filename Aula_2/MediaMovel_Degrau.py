@@ -12,6 +12,13 @@ def step_sign(sample, start, finish,power):
             step[s] = 1*power
     return step
 
+
+def sinus_wave(sample, freq):
+    pi = np.pi
+    sinus = np.cos(2*pi*sample*freq)
+    return sinus
+
+    
 #Array x do comprimento do array lido
 x = np.arange(0,25000,1)
 
