@@ -15,9 +15,9 @@ int main()
   short samplePF[NSAMPLES] = {0x0};
 
   float ganhoPA, ganhoPF, ganhoPB;
-  ganhoPA = 1.5;
-  ganhoPF = 1.4;
-  ganhoPB = 0.7;
+  ganhoPA = 1;
+  ganhoPF = 0.7;
+  ganhoPB = 0.6;
 
   float y = 0;
 

@@ -19,6 +19,8 @@ def mfreqz(b,a=1):
     xlabel(r'Normalized Frequency (x$\pi$rad/sample)')
     title(r'Phase response')
     subplots_adjust(hspace=1)
+    plt.show()
+
 
 #Plot step and impulse response
 def impz(b,a=1):
@@ -38,6 +40,7 @@ def impz(b,a=1):
     xlabel(r'n (samples)')
     title(r'Step response')
     subplots_adjust(hspace=0.5)
+    plt.show()
 
 
 Fs = int(44100)
@@ -55,6 +58,9 @@ h = signal.firwin(
     fs=Fs
 ) 
 array_in_string_format = np.array_str(h)
-with open('passaAlgo.txt','w') as f:
+with open('PassaBaixa4k.txt','w') as f:
   for i in h:
     f.write(str("{:.9f}\n".format(i)))
+
+
+mfreqz(h)
