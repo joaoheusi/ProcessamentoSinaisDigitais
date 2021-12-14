@@ -43,9 +43,9 @@ def impz(b,a=1):
     plt.show()
 
 
-Fs = int(44100)
-Fc = int(4000)
-BW = int(100)
+Fs = int(8000)
+Fc = int(1500)
+BW = int(400)
 
 normal_BW = BW/Fs
 
@@ -58,7 +58,7 @@ h = signal.firwin(
     fs=Fs
 ) 
 array_in_string_format = np.array_str(h)
-with open('PassaBaixa4k.txt','w') as f:
+with open('PassaBaixa1k5.txt','w') as f:
   for i in h:
     f.write(str("{:.9f}\n".format(i)))
 

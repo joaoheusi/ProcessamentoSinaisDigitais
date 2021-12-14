@@ -42,9 +42,9 @@ def impz(b,a=1):
     plt.show()
 
 
-Fs = int(44100)
-Fc = int(6000)
-BW = int(100)
+Fs = int(8000)
+Fc = int(3500)
+BW = int(400)
 
 normal_BW = BW/Fs
 
@@ -62,7 +62,7 @@ new_h[new_h.size//2] = 1
 new_h = new_h - h
 
 array_in_string_format = np.array_str(h)
-with open('PassaAlta6k.txt','w') as f:
+with open('PassaAlta3k5.txt','w') as f:
   for i in new_h:
     f.write(str("{:.9f}\n".format(i)))
 

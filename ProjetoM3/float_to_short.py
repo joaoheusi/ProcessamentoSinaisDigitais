@@ -26,4 +26,6 @@ def convert_coefs(coefs_float_filename: str)->None:
             f.write(new_value)
             f.write("\n")
 
-convert_coefs("Coefs_PA_1k")
+convert_coefs("PassaAlta3k5")
+convert_coefs("PassaBaixa1k5")
+convert_coefs("PassaFaixa1k5_3k5")

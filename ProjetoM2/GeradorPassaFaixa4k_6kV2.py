@@ -42,9 +42,9 @@ def impz(b,a=1):
     plt.show()
 
 
-Fs = int(44100)
+Fs = int(8000)
 Fc = int(6000)
-BW = int(100)
+BW = int(400)
 
 normal_BW = BW/Fs
 
@@ -52,7 +52,7 @@ M = 4/normal_BW
 M = int(M)
 lowerh = signal.firwin(
     M,
-    6000,
+    3500,
     window='hamming',
     fs=Fs
 ) 
@@ -60,7 +60,7 @@ lowerh = signal.firwin(
 M |= 1
 upperh = signal.firwin(
     M,
-    4000,
+    1500,
     window='hamming',
     fs=Fs,
     pass_zero=False
@@ -68,7 +68,7 @@ upperh = signal.firwin(
 
 new_h = np.convolve(lowerh,upperh,mode="same")
 
-with open('PassaFaixa4k_6kV2.txt','w') as f:
+with open('PassaFaixa1k5_3k5.txt','w') as f:
   for i in new_h:
     f.write(str("{:.9f}\n".format(i)))
 
