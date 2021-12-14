@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding='ISO-8859-1'?>
-<visualdsp-project schema="17" name="equalizador_float" file="equalizador_float.dpj" version="1">
+<visualdsp-project schema="17" name="fir_pb_short" file="fir_pb_short.dpj" version="1">
 	<!-- Project build target -->
 	<target>
 		<processor revision="Automatic">ADSP-BF533</processor>
